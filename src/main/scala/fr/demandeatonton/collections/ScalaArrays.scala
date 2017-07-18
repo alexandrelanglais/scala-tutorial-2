@@ -19,4 +19,12 @@ object ScalaArrays extends App {
   for (i <- 0 to 2)
     println(numNames(i))
 
+  // Tableau de n'importe quoi
+  val anything = Array(1, "Hello", java.math.BigDecimal.ZERO)
+  for (i <- 0 to 2)
+    println(anything(i).getClass)
+
+  // Array[Any] ne correspond pas à Array[String]
+//  val neCompilePas:Array[String] = Array(1, "Hello", java.math.BigDecimal.ZERO)
+
 }
